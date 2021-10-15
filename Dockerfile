@@ -9,8 +9,6 @@ RUN mv ./Emojicode-1.0-beta.2-Linux-x86_64/packages /usr/local/EmojicodePackages
 RUN mkdir -p /usr/local/include
 RUN mv ./Emojicode-1.0-beta.2-Linux-x86_64/include /usr/local/include/emojicode
 
-RUN ls /usr/local/bin
-
 COPY entrypoint.sh /entrypoint.sh
 
 # Access user's repo
