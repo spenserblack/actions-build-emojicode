@@ -1,0 +1,14 @@
+name: Build Emojicode
+description: Sets up emojicodec and builds an Emojicode file
+branding:
+  icon: file-text
+  color: yellow
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.filename }}
+inputs:
+  filename:
+    description: The file to be built
+    required: true
