@@ -7,7 +7,7 @@ WORKDIR /Downloads
 RUN ls -thl .
 RUN tar -xzf Emojicode-1.0-beta.2-Linux-x86_64.tar.gz
 RUN cp ./Emojicode-1.0-beta.2-Linux-x86_64/emojicodec /usr/bin/
-RUN chmod +x /emojicodec
+RUN chmod +x /usr/bin/emojicodec
 RUN mv ./Emojicode-1.0-beta.2-Linux-x86_64/packages /usr/local/EmojicodePackages
 RUN mkdir -p /usr/local/include
 RUN mv ./Emojicode-1.0-beta.2-Linux-x86_64/include /usr/local/include/emojicode
