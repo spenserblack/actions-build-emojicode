@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
 # Setup emojicodec
+RUN apt install g++
 RUN mkdir /Downloads
 ADD https://github.com/emojicode/emojicode/releases/download/v1.0-beta.2/Emojicode-1.0-beta.2-Linux-x86_64.tar.gz /Downloads
 WORKDIR /Downloads
