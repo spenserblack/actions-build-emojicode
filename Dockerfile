@@ -1,4 +1,4 @@
-FROM alpine:3
+FROM ubuntu:20.04
 
 # Setup emojicodec
 RUN mkdir /Downloads
