@@ -2,7 +2,8 @@ FROM alpine:3
 
 # Setup emojicodec
 RUN mkdir /Downloads
-ADD https://github.com/emojicode/emojicode/releases/download/v1.0-beta.2/Emojicode-1.0-beta.2-Linux-x86_64.tar.gz /Download
+ADD https://github.com/emojicode/emojicode/releases/download/v1.0-beta.2/Emojicode-1.0-beta.2-Linux-x86_64.tar.gz /Downloads
+WORKDIR /Downloads
 RUN ls -thl ./Emojicode-1.0-beta.2-Linux-x86_64
 RUN cp ./Emojicode-1.0-beta.2-Linux-x86_64/emojicodec /usr/bin/
 RUN chmod +x /emojicodec
