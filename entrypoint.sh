@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/local/bin/emojicodec $1
+/usr/bin/emojicodec $1
